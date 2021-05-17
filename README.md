@@ -1,3 +1,38 @@
+# Semaine n°3 : du 10 mai au 14 mai <a name="semaine3"></a>
+## Sprints et fonctionnalités réalisées
+Fonctionnalité n°2 : Dimensionner le vaiseau
+
+Story n°1 : POuvoir donner une dimension au vaisseau (fini)
+Le vaisseau doit avoir un nouveau constructeur qui lui permet d'avoir une dimension en plus de sa position.
+
+Story n°2 : Modifier les les méthodes et tests qui ont besoin de la dimension du vaisseau (fini)
+Les constructeurs ont été modifiés, nous devons donc vérifier que les différentes méthodes peuvent être utilisées correctement avec les nouveaux constructeurs. De plus, nous allons faire de étapes de "Refractoring" supplémentaire afin de vraiment pouvoir naviguer dans le code et de le comprendre sans avoir des commentaires à toutes les lignes.
+
+Fonctionnalité en cours d’implémentation :
+Etape n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu
+
+![DIagramme de classe Semaine 2](./images/diagrammeDeClasse2.png)
+
+### Nuage de mots de la semaine 1
+
+![Nuage de mots Semaine 2](./images/nuageDeMotN2.png)
+
+Difficultés rencontrées
+Aucune
+
+Remarques diverses
+Aucune
+
+------
+
+Glossaire
+
+_Vaisseau_ : véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
+
+
+----------------
+
+
 # Semaine n°2 : du 26 avril au 2 mai <a name="semaine2"></a>
 ## Sprints et fonctionnalités réalisées
 
