@@ -1,3 +1,36 @@
+# Semaine n°4 : du 17 mai au 21 mai <a name="semaine4"></a>
+## Sprints et fonctionnalités réalisées
+Fonctionnalité n°3 : Choisir la vitesse du vaisseau
+
+Story n°1 :Ajouter la vitesse au Vaisseau sans régression de comportement(fini)
+Le vaisseau a maintenant un nouvel attribut nommé vitesse qui doit pouvoir être modifiable durant la partie et différent d'un vaisseau à l'autre.
+
+Story n°2 : Faire en sorte que le déplacement se fasse correctement pour une vitesse quelconque (en cours)
+Savoir envisager les cas ou le changement de vitesse posera problème. il est impératif de changer le fonctionnement des deux déplacements actuels (le déplacement vers la droite et vers la gauche). Nous devons modifier la plupart des méthodes et créer de nouveaux tests spécifiques.
+
+Fonctionnalité en cours d’implémentation :
+Etape n°2 : Déplacement vers la gauche pour une vitesse quelconque
+
+![Diagramme de classe Semaine 3](./images/diagrammeDeClasse3.png)
+
+### Nuage de mots de la semaine 3
+
+![Nuage de mots Semaine 3](./images/NuageDeMotN3.png)
+
+Difficultés rencontrées
+Il y a eu un melange entre les axes x et y qui a posé problème lors de la session précédente, Cela peut être la source de petites erreurs pour les prochaines fois!
+
+Remarques diverses
+Aucune
+
+------
+
+Glossaire
+
+_Vaisseau_ : véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
+_Vitesse_ : Nombre de sections parcourues en 1 déplacement sur l'axe x ou y.
+
+----------------
 # Semaine n°3 : du 10 mai au 14 mai <a name="semaine3"></a>
 ## Sprints et fonctionnalités réalisées
 Fonctionnalité n°2 : Dimensionner le vaiseau
@@ -13,7 +46,7 @@ Etape n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vais
 
 ![DIagramme de classe Semaine 2](./images/diagrammeDeClasse2.png)
 
-### Nuage de mots de la semaine 1
+### Nuage de mots de la semaine 2
 
 ![Nuage de mots Semaine 2](./images/nuageDeMotN2.png)
 
