@@ -1,5 +1,6 @@
 package fr.unilim.iut.spaceinvaders;
 
+import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
 public class Vaisseau extends Sprite {
@@ -27,5 +28,18 @@ public class Vaisseau extends Sprite {
 		Position positionOrigineMissile = new Position(abscisseOrigineMissile, ordonneeeOrigineMissile);
 		return positionOrigineMissile;
 	}
+
+	public void deplacer(Commande c) {
+		if (c.gauche)
+		{
+			this.seDeplacerVersLaGauche();
+		}
+
+		if (c.droite)
+		{
+			this.seDeplacerVersLaDroite();
+		}
+	}
+		
 
 }

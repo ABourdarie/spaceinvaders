@@ -1,10 +1,11 @@
 package fr.unilim.iut.spaceinvaders;
 
+import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu{
 
 	private static final char MARQUE_FIN_LIGNE = '\n';
 	private static final char MARQUE_VIDE = '.';
@@ -111,6 +112,22 @@ public class SpaceInvaders {
 							
 		   this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesseMissile);
     }
+	
+	public Vaisseau getVaisseau() {
+		return vaisseau;
+	}
+
+	@Override
+	public void evoluer(Commande commande) {
+		this.getVaisseau().deplacer(commande);
+
+	}
+	
+	@Override
+	public boolean etreFini() {
+		// le jeu n'est jamais fini
+		return false;
+	}
 	
 	
 
